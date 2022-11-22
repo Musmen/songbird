@@ -1,0 +1,63 @@
+@import '../../../../scss/variables/index.scss';
+@import '../../../../scss/mixins.scss';
+
+.gallery--title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 10px;
+
+  color: $main-active-color;
+
+  text-align: center;
+
+  background-color: #ffffffcc;
+  border-radius: 10px;
+}
+
+.gallery {
+  .swiper {
+    margin-bottom: 10px;
+  }
+
+  .swiper--container {
+    margin: 0 10px;
+
+    background-color: #20b2aacc;
+
+    border-radius: 10px;
+
+    @include media-desktop-small {
+      margin: 0;
+    }
+  }
+
+  .swiper .control--wrapper {
+    @include media-desktop-small {
+      display: none;
+    }
+  }
+
+  .swiper--slide .card {
+    margin: 20px 50px;
+
+    @include media-desktop-small {
+      margin: 20px;
+    }
+  }
+
+  .swiper--slide .card--description {
+    min-height: 80px;
+
+    @media (max-width: 800px) {
+      min-height: 100px;
+    }
+
+    @media (max-width: 500px) {
+      min-height: 140px;
+    }
+
+    @media (max-width: 400px) {
+      min-height: 160px;
+    }
+  }
+}

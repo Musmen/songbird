@@ -1,0 +1,33 @@
+.footer {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 5px 0;
+
+  background-image: url('../../../../../assets/img/footer-bg.png');
+  background-size: cover;
+  background-position: 0px 64px;
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.footer--centralizer {
+  @include flex-space_between;
+  align-items: center;
+}
+
+.footer--description {
+  @include flex-centered;
+  margin: 0;
+}
+
+.course--year {
+  margin: 0 10px;
+
+  color: $main-light-color;
+  font-weight: bold;
+  font-size: 20px;
+
+  @include media-mobile {
+    font-size: 16px;
+  }
+}

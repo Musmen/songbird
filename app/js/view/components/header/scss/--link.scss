@@ -1,0 +1,10 @@
+.header--link {
+  @include flex-centered;
+
+  transition: color 0.5s;
+}
+
+.header--link:hover,
+.header--link:focus {
+  color: $main-active-color;
+}

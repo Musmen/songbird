@@ -1,0 +1,61 @@
+@import '../../../../../scss/mixins.scss';
+
+.card--wrapper {
+  @include flex;
+  align-items: center;
+  margin-bottom: 5px;
+
+  @media (max-width: 449px) {
+    flex-direction: column;
+  }
+}
+
+.card--wrapper-inner {
+  @include flex-column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card--figure {
+  margin: 0;
+}
+
+.card--image {
+  width: 200px;
+  height: 150px;
+  margin-right: 10px;
+
+  border-radius: 10px;
+
+  object-fit: cover;
+
+  @media (max-width: 700px) {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+.card--audio {
+  @media (max-width: 549px) {
+    width: 250px;
+  }
+}
+
+.card--description {
+  margin: 0;
+}
+
+.card--title {
+  margin: 0;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.latin--title {
+  margin: 0;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+}

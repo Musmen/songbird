@@ -1,0 +1,33 @@
+{
+  "name": "songbird",
+  "version": "1.0.0",
+  "description": "RSSchool 2022 Q3. Stage 1. Songbird",
+  "main": "./app/app.js",
+  "scripts": {
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
+    "watch": "webpack --watch",
+    "lint": "eslint ./app",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "author": "Musmen",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.20.1"
+  }
+}

@@ -1,0 +1,73 @@
+.menu--list {
+  @include flex-space_between;
+  width: 700px;
+
+  font-weight: 500;
+
+  @include media-desktop-small {
+    width: 500px;
+  }
+
+  @include media-tablet {
+    width: 350px;
+  }
+
+  @include media-mobile {
+    width: 234px;
+  }
+}
+
+.menu--link {
+  box-sizing: border-box;
+  @include flex-centered;
+  width: 200px;
+  height: 60px;
+  padding-bottom: 22px;
+
+  color: $secondary-active-color;
+  font-weight: bold;
+
+  background-image: url('./assets/img/nav_link-bg.png');
+  background-repeat: no-repeat;
+  background-position: 0 1px;
+  background-size: cover;
+
+  transition: color 0.5s;
+
+  @include media-desktop-small {
+    width: 150px;
+    padding-bottom: 12px;
+
+    background-position: 0 11px;
+  }
+
+  @include media-tablet {
+    width: 100px;
+    padding-bottom: 0;
+
+    color: $main-light-color;
+
+    background: none;
+  }
+
+  @include media-mobile {
+    width: 78px;
+
+    font-size: 14px;
+  }
+}
+
+.menu--link:hover,
+.menu--link:focus {
+  color: $main-active-color;
+}
+
+.menu--item-active {
+  .menu--link {
+    color: $main-active-color;
+
+    outline: none;
+
+    cursor: default;
+  }
+}

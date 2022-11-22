@@ -1,0 +1,29 @@
+.body--header {
+  width: 100%;
+  @include flex;
+  align-items: center;
+  min-height: 80px;
+  margin-bottom: 10px;
+
+  background-image: url('../../../../../assets/img/header-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  color: $main-light-text-color;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.header--centralizer {
+  @include flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: #80808080;
+
+  border-radius: 10px;
+
+  @include media-mobile {
+    width: 100vw;
+  }
+}

@@ -1,0 +1,39 @@
+.footer--link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+
+  border-radius: 50%;
+  transition: all 0.5s;
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: #dedede;
+    outline: none;
+    box-shadow: 0px 0px 5px 3px #dedede;
+  }
+
+  @include media-mobile {
+    margin-right: 5px;
+  }
+}
+
+.footer--link-rss_course {
+  width: 110px;
+
+  background-image: url('../../../../../assets/img/rss_logo.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 20px;
+
+  font-size: 0;
+
+  @include media-mobile {
+    width: 70px;
+
+    border-radius: 0;
+  }
+}

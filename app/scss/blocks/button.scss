@@ -1,0 +1,47 @@
+.button {
+  width: 200px;
+  height: 54px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: $main-light-text-color;
+
+  background-color: #20b2aa;
+
+  border: none;
+  border-radius: 5px;
+
+  outline: none;
+
+  transition: all 0.5s;
+}
+
+.button-small {
+  width: 62px;
+  height: 62px;
+
+  border-radius: 50%;
+}
+
+.button:hover {
+  background: none;
+  background-color: $main-button-color;
+}
+
+.button:active {
+  background: none;
+  background-color: $main-active-button-color;
+}
+
+.button-disabled,
+.button-disabled:hover,
+.button-disabled:active {
+  background-color: gray;
+}
+
+.button-round {
+  border-radius: 25px;
+}

@@ -1,0 +1,22 @@
+.socials--list {
+  @include flex;
+  margin: 0;
+}
+
+.socials--icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+
+  &-github {
+    background-image: url('../../../../../assets/img/github.png');
+    background-position: 2px 1px;
+  }
+
+  &-telegram {
+    background-image: url('../../../../../assets/img/telegram.png');
+  }
+}

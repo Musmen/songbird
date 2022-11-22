@@ -1,0 +1,37 @@
+@import '../../../../scss/variables/index.scss';
+@import '../../../../scss/mixins.scss';
+
+.about {
+  @include flex-centered;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+  padding: 10px;
+
+  font-size: 20px;
+
+  background-color: #20b2aacc;
+  border-radius: 10px;
+}
+
+.about--title {
+  margin-bottom: 10px;
+  padding: 5px;
+
+  color: $main-active-color;
+
+  background-color: $main-light-bg-color;
+  border-radius: 10px;
+}
+
+.about--button {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  @media (max-width: 449px) {
+    width: 300px;
+  }
+}

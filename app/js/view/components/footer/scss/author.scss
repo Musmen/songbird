@@ -1,0 +1,12 @@
+.author {
+  margin: 0;
+  margin-right: 20px;
+
+  font-size: 20px;
+  font-weight: 700;
+  color: $main-light-color;
+
+  @include media-mobile {
+    font-size: 16px;
+  }
+}
